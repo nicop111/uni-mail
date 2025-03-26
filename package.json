@@ -1,0 +1,34 @@
+{
+  "name": "uni-mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.nicop111.uni-mail",
+    "productName": "Uni-Mail",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "keywords": [],
+  "author": "Nico Porsch",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^35.1.0",
+    "electron-builder": "^25.1.8"
+  }
+}
